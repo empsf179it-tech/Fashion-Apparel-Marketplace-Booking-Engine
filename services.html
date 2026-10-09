@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Fashion Apparel Marketplace</title>
+  <meta name="description" content="Explore our curated fashion services including personal styling, photography, and tailoring.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <svg viewBox="0 0 100 100" width="40" height="40" xmlns="http://www.w3.org/2000/svg" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #ffffff;">
+        <circle cx="50" cy="50" r="50" fill="#ffffff" />
+        <image href="images/logo.png" x="5" y="5" width="90" height="90" style="mix-blend-mode: multiply;" />
+      </svg>
+      <span>VOGUE CONNECT</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="fashion-designers.html">Designers</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="#" data-modal="quickBookModal" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Now</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Section 1: Services Hero -->
+  <section class="section text-center" style="padding-top: 150px; padding-bottom: 80px; background: var(--soft-ivory);">
+    <div class="container fade-in">
+      <h1 class="heading-lg" style="margin-bottom: 1.5rem;">Fashion Services, Curated Around You.</h1>
+      <p class="text-lg" style="margin-bottom: 3rem; max-width: 600px; margin-inline: auto;">Explore bespoke styling, photography, tailoring, and designer consultations tailored to your unique aesthetic.</p>
+      
+      <div style="background: var(--white); padding: 1.5rem; max-width: 800px; margin: 0 auto; display: flex; gap: 1rem; flex-wrap: wrap; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <select class="form-control" style="flex: 1; min-width: 200px; border-color: var(--muted-taupe);">
+          <option value="">All Service Categories</option>
+          <option value="styling">Personal Styling</option>
+          <option value="photography">Fashion Photography</option>
+          <option value="tailoring">Tailoring</option>
+        </select>
+        <input type="text" class="form-control" placeholder="Location (e.g. New York)" style="flex: 1; min-width: 200px; border-color: var(--muted-taupe);">
+        <button class="btn btn-primary" style="padding: 1rem 2rem;">Find My Fashion Service</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Service Categories Explorer -->
+  <section class="section bg-white">
+    <div class="container fade-in">
+      <div class="text-center" style="margin-bottom: 4rem;">
+        <h2 class="heading-md">Service Categories</h2>
+        <p class="text-md">Comprehensive fashion solutions for every need.</p>
+      </div>
+      
+      <div class="grid-4">
+        <div class="service-card">
+          <div class="service-img"><img src="images/image-35.png" alt="Personal Styling"></div>
+          <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Personal Styling</h3>
+          <p class="text-sm" style="color: var(--muted-taupe); margin-bottom: 1rem;">Complete wardrobe overhaul and event styling.</p>
+          <p class="text-sm text-gold" style="margin-bottom: 1rem; font-weight: 600;">Starting at $250</p>
+          <a href="booking.html" class="btn btn-secondary" style="width: 100%;">View Service</a>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/image-36.png" alt="Fashion Photography"></div>
+          <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Fashion Photography</h3>
+          <p class="text-sm" style="color: var(--muted-taupe); margin-bottom: 1rem;">Editorial and personal brand photoshoots.</p>
+          <p class="text-sm text-gold" style="margin-bottom: 1rem; font-weight: 600;">Starting at $500</p>
+          <a href="booking.html" class="btn btn-secondary" style="width: 100%;">View Service</a>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/image-37.png" alt="Designer Consultations"></div>
+          <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Designer Consults</h3>
+          <p class="text-sm" style="color: var(--muted-taupe); margin-bottom: 1rem;">Direct access to independent creators.</p>
+          <p class="text-sm text-gold" style="margin-bottom: 1rem; font-weight: 600;">Starting at $150</p>
+          <a href="booking.html" class="btn btn-secondary" style="width: 100%;">View Service</a>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/image-38.png" alt="Tailoring & Alterations"></div>
+          <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Tailoring</h3>
+          <p class="text-sm" style="color: var(--muted-taupe); margin-bottom: 1rem;">Precision alterations and bespoke fits.</p>
+          <p class="text-sm text-gold" style="margin-bottom: 1rem; font-weight: 600;">Starting at $75</p>
+          <a href="booking.html" class="btn btn-secondary" style="width: 100%;">View Service</a>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/image-39.png" alt="Apparel Rental"></div>
+          <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Apparel Rental</h3>
+          <p class="text-sm" style="color: var(--muted-taupe); margin-bottom: 1rem;">Curated luxury pieces for special events.</p>
+          <p class="text-sm text-gold" style="margin-bottom: 1rem; font-weight: 600;">Starting at $100</p>
+          <a href="booking.html" class="btn btn-secondary" style="width: 100%;">View Service</a>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/image-40.png" alt="Wardrobe Planning"></div>
+          <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Wardrobe Planning</h3>
+          <p class="text-sm" style="color: var(--muted-taupe); margin-bottom: 1rem;">Seasonal organization and capsule creation.</p>
+          <p class="text-sm text-gold" style="margin-bottom: 1rem; font-weight: 600;">Starting at $300</p>
+          <a href="booking.html" class="btn btn-secondary" style="width: 100%;">View Service</a>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/image-41.png" alt="Bridal Styling"></div>
+          <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Bridal Styling</h3>
+          <p class="text-sm" style="color: var(--muted-taupe); margin-bottom: 1rem;">Comprehensive styling for your big day.</p>
+          <p class="text-sm text-gold" style="margin-bottom: 1rem; font-weight: 600;">Starting at $800</p>
+          <a href="booking.html" class="btn btn-secondary" style="width: 100%;">View Service</a>
+        </div>
+        <div class="service-card">
+          <div class="service-img"><img src="images/image-42.png" alt="Boutique Appointments"></div>
+          <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Boutique Visits</h3>
+          <p class="text-sm" style="color: var(--muted-taupe); margin-bottom: 1rem;">Private shopping experiences.</p>
+          <p class="text-sm text-gold" style="margin-bottom: 1rem; font-weight: 600;">Complimentary</p>
+          <a href="booking.html" class="btn btn-secondary" style="width: 100%;">View Service</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: How Services Work -->
+  <section class="section bg-beige">
+    <div class="container fade-in">
+      <div class="text-center" style="margin-bottom: 4rem;">
+        <h2 class="heading-md">How Our Services Work</h2>
+      </div>
+      
+      <div class="grid-3 process-grid" style="text-align: center;">
+        <div>
+          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 4px solid var(--white);">
+            <img src="images/image-43.png" alt="Step 1">
+          </div>
+          <h3 class="heading-sm" style="margin-bottom: 1rem;">1. Provider Selection</h3>
+          <p class="text-sm">Browse verified fashion professionals and select the service that meets your needs.</p>
+        </div>
+        <div>
+          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 4px solid var(--white);">
+            <img src="images/image-44.png" alt="Step 2">
+          </div>
+          <h3 class="heading-sm" style="margin-bottom: 1rem;">2. Calendar Scheduling</h3>
+          <p class="text-sm">Choose an available time slot and review your instant deposit calculation.</p>
+        </div>
+        <div>
+          <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 4px solid var(--white);">
+            <img src="images/image-45.png" alt="Step 3">
+          </div>
+          <h3 class="heading-sm" style="margin-bottom: 1rem;">3. Booking Confirmation</h3>
+          <p class="text-sm">Secure your appointment instantly and begin direct communication with your provider.</p>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: 4rem;">
+        <a href="booking.html" class="btn btn-primary">Choose a Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Featured Services & Enquiry -->
+  <section class="section bg-black text-white">
+    <div class="container fade-in">
+      <div class="grid-2" style="align-items: center; gap: 4rem;">
+        <div class="grid-2" style="gap: 1rem;">
+          <img src="images/image-46.png" alt="Featured 1" style="width: 100%; height: 250px; object-fit: cover;">
+          <img src="images/image-47.png" alt="Featured 2" style="width: 100%; height: 250px; object-fit: cover; margin-top: 2rem;">
+          <img src="images/image-48.png" alt="Featured 3" style="width: 100%; height: 250px; object-fit: cover; margin-top: -2rem;">
+          <img src="images/image-49.png" alt="Featured 4" style="width: 100%; height: 250px; object-fit: cover;">
+        </div>
+        <div>
+          <h2 class="heading-md" style="margin-bottom: 1.5rem; color: var(--white);">Curated Signature Experiences</h2>
+          <p class="text-md" style="margin-bottom: 2rem; color: rgba(255,255,255,0.7);">Looking for something truly bespoke? Our signature services offer comprehensive fashion transformations, combining multiple disciplines for the ultimate styling experience.</p>
+          <a href="#" data-modal="consultationModal" class="btn btn-gold">Request a Fashion Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="nav-brand" style="color: var(--white); margin-bottom: 1.5rem;">
+            <svg viewBox="0 0 100 100" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="50" fill="#fdfbf7" />
+              <image href="images/logo.png" x="5" y="5" width="90" height="90" style="mix-blend-mode: multiply;" />
+            </svg>
+            <span>VOGUE CONNECT</span>
+          </div>
+          <p class="text-sm" style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">The premium fashion service marketplace connecting you with elite stylists, designers, and boutiques.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-2.8 19.6c-.1-.7-.2-1.7 0-2.4l1.2-5s-.3-.6-.3-1.4c0-1.3.8-2.3 1.7-2.3.8 0 1.2.6 1.2 1.3 0 .8-.5 2-.8 3.1-.2 1 .5 1.8 1.4 1.8 1.7 0 3-1.8 3-4.4 0-2.3-1.6-3.9-4-3.9-2.7 0-4.3 2-4.3 4.1 0 .8.3 1.7.7 2.2.1.1.1.2 0 .4l-.2.9c0 .2-.1.2-.3.1-1.2-.6-2-2.4-2-3.9 0-3.2 2.3-6.1 6.7-6.1 3.5 0 6.3 2.5 6.3 5.9 0 3.5-2.2 6.3-5.3 6.3-1 0-2-.5-2.4-1.2l-.6 2.4c-.2.9-.8 2-1.2 2.7A10 10 0 1 0 12 2z"></path></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fashion-designers.html">Fashion Designers & Boutiques</a></li>
+            <li><a href="booking.html">Booking & Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Fashion Services</h4>
+          <ul>
+            <li><a href="services.html">Personal Styling</a></li>
+            <li><a href="services.html">Fashion Photography</a></li>
+            <li><a href="services.html">Designer Appointments</a></li>
+            <li><a href="services.html">Custom Tailoring</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Join Us</h4>
+          <p class="text-sm" style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Are you a fashion professional? Join our exclusive marketplace.</p>
+          <a href="#" data-modal="partnerModal" class="text-gold text-sm" style="text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">Apply as a Fashion Partner &rarr;</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vogue Connect. All rights reserved.</p>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#" class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="Back to Top">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Consultation Modal -->
+  <div class="modal-overlay" id="consultationModal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Request a Consultation</h3>
+      <p class="text-sm" style="margin-bottom: 2rem;">Share your requirements for a bespoke fashion experience.</p>
+      
+      <form>
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Desired Service</label>
+          <select class="form-control" required>
+            <option value="">Select Service</option>
+            <option value="styling">Personal Styling</option>
+            <option value="wardrobe">Wardrobe Transformation</option>
+            <option value="bridal">Bridal Styling</option>
+          </select>
+        </div>
+        <div class="grid-2" style="gap: 1rem; margin-bottom: 1.5rem;">
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Preferred Date</label>
+            <input type="date" class="form-control" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Budget Range</label>
+            <input type="text" class="form-control" placeholder="e.g. $500 - $1000" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Requirements</label>
+          <textarea class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+        <div class="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="assets/js/main.js"></script>
+      <!-- Quick Booking Modal -->
+  <div class="modal-overlay" id="quickBookModal">
+    <div class="modal-content text-center">
+      <button class="modal-close">&times;</button>
+      <h3 class="heading-sm" style="margin-bottom: 0.5rem;">Book an Appointment</h3>
+      <p class="text-sm" style="margin-bottom: 2rem;">Schedule your personalized fashion experience.</p>
+      
+      <form style="text-align: left;">
+        <div class="form-group">
+          <label class="form-label">Service Type</label>
+          <select class="form-control" required>
+            <option value="">Select a service</option>
+            <option value="styling">Personal Styling</option>
+            <option value="tailoring">Custom Tailoring</option>
+            <option value="photography">Fashion Photography</option>
+            <option value="consultation">Designer Consultation</option>
+          </select>
+        </div>
+        <div class="grid-2" style="gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label">Preferred Date</label>
+            <input type="date" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Time</label>
+            <select class="form-control" required>
+              <option value="">Select a time</option>
+              <option value="morning">Morning (9AM - 12PM)</option>
+              <option value="afternoon">Afternoon (1PM - 4PM)</option>
+              <option value="evening">Evening (5PM - 8PM)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-control" placeholder="Jane Doe" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 2rem;">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" placeholder="jane@example.com" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking</button>
+        <div class="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
