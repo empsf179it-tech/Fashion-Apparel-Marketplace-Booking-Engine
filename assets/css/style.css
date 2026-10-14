@@ -157,12 +157,14 @@ ul {
 }
 
 .nav-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 1rem;
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 600;
+  text-decoration: none;
+  color: inherit;
 }
 .nav-brand svg {
   width: 40px;
@@ -575,12 +577,35 @@ textarea.form-control {
 }
 @media (max-width: 768px) {
   .partner-card-content {
+    padding: 2.5rem 1.5rem;
+  }
+  .btn.partner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 1.5rem auto 0;
+    padding: 0.875rem 1.25rem;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    white-space: normal;
+    word-break: normal;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 480px) {
+  .partner-card-content {
     padding: 2rem 1rem;
   }
   .btn.partner-btn {
-    white-space: nowrap;
-    padding: 1rem 1.5rem;
     width: 100%;
+    max-width: 100%;
+    font-size: 0.775rem;
+    padding: 0.85rem 0.75rem;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -589,4 +614,78 @@ textarea.form-control {
 @media (min-width: 577px) and (max-width: 1024px) {
   .process-grid > div:nth-child(3) { grid-column: span 2; justify-self: center; width: calc(50% - 1rem); min-width: 250px; }
 }
+
+/* Contact Form Tablet & Mobile Responsive Layout (768px and 1024px One by One Alignment) */
+@media (max-width: 1024px) {
+  .contact-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .contact-form-col {
+    order: 1;
+    padding: 3.5rem 2.5rem !important;
+  }
+  .contact-image-col {
+    order: 2;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    height: 300px !important;
+    width: 100% !important;
+  }
+  .contact-image-col img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-col {
+    padding: 2.5rem 1.5rem !important;
+  }
+  .contact-image-col {
+    grid-template-columns: 1fr 1fr !important;
+    height: 180px !important;
+  }
+}
+
+/* Booking Page Dual Images Mobile Alignment */
+@media (max-width: 768px) {
+  .booking-image-duo {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .booking-image-duo img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-image-duo {
+    gap: 0.5rem !important;
+  }
+  .booking-image-duo img {
+    height: 180px !important;
+  }
+}
+
+/* Booking Page Review Button Mobile Center Alignment */
+@media (max-width: 768px) {
+  .review-booking-btn-wrap {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+
+
 
